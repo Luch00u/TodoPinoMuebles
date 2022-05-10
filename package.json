@@ -1,0 +1,25 @@
+{
+  "name": "todopinomuebles",
+  "version": "1.0.0",
+  "description": "Catálogo online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luch00u/TodoPinoMuebles.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luch00u/TodoPinoMuebles/issues"
+  },
+  "homepage": "https://github.com/Luch00u/TodoPinoMuebles#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}
