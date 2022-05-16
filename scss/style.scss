@@ -1,19 +1,24 @@
-//imports
-@import "variables";
-@import "header";
-
-
-*{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-body{
-   background:$fondoPagina;
+li{
+  text-decoration: none;
+  list-style-type: none;
 }
-a{
+a {
+  text-decoration: none;
+  color: white;
+  &:after {
     text-decoration: none;
+  }
+  &:before {
+    text-decoration: none;
+  }
 }
 
+@import "variables";
+@import "layoutPagina";
 
-
+//@import "footer";

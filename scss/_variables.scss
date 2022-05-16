@@ -1,4 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
 //variables
-$gradienteSeccion:linear-gradient(to bottom, #062c30, #05595b);
-$fondoPagina:#062c30;
-$fondoNav:linear-gradient(to top,#2b2b2b,rgb(70, 68, 68))
+$fondoHeader: linear-gradient(40deg,#040303,#461111,#A13333,#B3541E);
+$fondoPagina:rgb(173, 173, 173) ;
+$fondoNav: linear-gradient(to top, #2b2b2b, rgb(70, 68, 68));
+$fondoSeccionNosotros: #73777B;
+$gradienteSeccionNosotros:linear-gradient(to top, #73777B,#bbbdc1,#73777B);
+$fuenteTexto: 'Koulen', cursive;
+$sombraTitulo:1px 1px 20px black;
+$fuenteH1: 'Black Ops One',cursive;
+$fuenteNavBar:'Alumni Sans Inline One';
+
+/*--------MIXIN FLEX----------*/
+@mixin flexbox($display,$direccion,$justify,$align){
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+    
+}
+/*--------Keyframes--------*/
+@keyframes animacionRedes {
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+@keyframes animacionHeader {
+    0%{
+        background-position: 50% 100%;
+        border-bottom-left-radius: 10% ;
+    }
+   
+    50%{
+        background-position:100% 0% ;
+        border-bottom-left-radius: 10% ;
+    }
+    100%{
+       background-position:50% 100%;
+       border-bottom-left-radius: 10% ;
+    }
+}
+
+//#064850
