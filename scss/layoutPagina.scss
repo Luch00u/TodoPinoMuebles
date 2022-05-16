@@ -82,7 +82,7 @@
           font-size: 20px;
           letter-spacing: 1px;
           border-bottom: 2px solid white;
-          a{
+          a {
             color: rgb(229, 204, 9);
           }
         }
@@ -90,7 +90,47 @@
     }
     .main {
       grid-area: main;
-      height: 700px;
+      height: 50vh;
+      .principal {
+        height: 100%;
+        background-image: url(/images/seccionInicio.jpg);
+        background-size: cover;
+        background-position: center;
+        @include flexbox(flex, row, center, center);
+
+        .inicio {
+          height: 100%;
+          width: 100%;
+          // border-radius: 15%;
+          @include flexbox(flex, column, center, center);
+          gap: 50px;
+          background-color: rgba(65, 65, 65, 0.702);
+
+          p{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            width: 80%;
+            // border: 5px dotted rgb(15, 172, 39);
+           
+            z-index: 1;
+            padding: 10px;
+            border-radius: 20px;
+          }
+          a{
+            border: 2px solid black;
+            border-radius: 20px;
+            font-size: 18px;
+            background-color: rgb(61, 61, 61);
+            color: yellow;
+            padding: 10px;
+            width: 6rem;
+            text-align: center;
+            box-shadow: 2px 5px 20px rgb(0, 0, 0);
+          }
+        }
+      }
     }
     .footer {
       grid-area: footer;
