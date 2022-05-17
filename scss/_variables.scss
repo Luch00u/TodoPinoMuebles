@@ -10,6 +10,7 @@ $fuenteTexto: 'Koulen', cursive;
 $sombraTitulo:1px 1px 20px black;
 $fuenteH1: 'Black Ops One',cursive;
 $fuenteNavBar:'Alumni Sans Inline One';
+$fuenteH2:'Koulen', cursive;
 
 /*--------MIXIN FLEX----------*/
 @mixin flexbox($display,$direccion,$justify,$align){
@@ -41,4 +42,3 @@ $fuenteNavBar:'Alumni Sans Inline One';
     }
 }
 
-//#064850
