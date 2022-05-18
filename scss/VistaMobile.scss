@@ -1,10 +1,31 @@
 @import "variables";
 
-/*--------------VISTA MOBILE------------*/
+/*-------------- VISTA MOBILE 1 ------------*/
 
 @media screen and(max-width:768px) {
   body {
-    height: 150%;
+    position: relative;
+    .whatsap{
+      height: 3rem;
+      width: 3rem;
+      display: flex;
+      border: 2px solid white;
+      border-radius: 50%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(1, 161, 1);
+      position: fixed;
+      bottom: 15px;
+      right: 6px;
+      box-shadow: 0 0 10px black;
+      animation: wsp 2s infinite;
+      .wsp{
+        color: white;
+        font-size: 150%;
+      }
+    }
+    height: 180%;
     width: 100vw;
     display: grid;
     grid-template-areas:
@@ -68,6 +89,8 @@
       }
     }
     .navBar {
+      position: sticky;
+      top: 0;
       grid-area: navBar;
       height: 4rem;
       background: linear-gradient(
@@ -95,9 +118,9 @@
     }
     .main {
       grid-area: main;
-      height: 160vh; /*!!!!!!!!!!*/
+      height: 180vh;
       .principal {
-        height: 40%;
+        height: 35%; /*!!!!!!!!!!*/
         background-image: url(../images/seccionInicio.jpg);
         background-size: cover;
         background-position: center;
@@ -120,7 +143,7 @@
             width: 80%;
             // border: 5px dotted rgb(15, 172, 39);
 
-            z-index: 1;
+           
             padding: 10px;
             border-radius: 20px;
           }
@@ -140,7 +163,7 @@
       }
 
       .nosotros {
-        height: 56%;
+        height: 65%; /*!!!*/
         width: 100vw;
         background: linear-gradient(
           to top,
@@ -150,10 +173,10 @@
         );
 
         .informacion {
-          @include flexbox(flex, column, center, center);
+          @include flexbox(flex, column, space-evenly, center);
           height: 100%;
           width: 100%;
-          gap: 25px;
+          // gap: 0px;
           // padding: 10px;
           border: 1px solid black;
           /*------CAJAS CONTENEDORAS DE ICONO Y TEXTO---------*/
@@ -181,10 +204,10 @@
                 sans-serif;
             }
           }
-          .box-info2{
+          .box-info2 {
             @extend .box-info1;
           }
-          .box-info3{
+          .box-info3 {
             @extend .box-info1;
           }
         }
@@ -193,62 +216,44 @@
     .footer {
       grid-area: footer;
       width: 100%;
-      height: 151%;
+      height: 120%;
+      animation: animacionFooter 5s infinite;
+      background-size: 200%;
       justify-self: flex-end;
       align-self: flex-end;
-      background-color: rgb(0, 0, 0);
+      background-image: linear-gradient(
+        to right,
+        rgb(9, 9, 9),
+        rgb(62, 62, 62),
+        rgb(11, 11, 11)
+      );
       color: aliceblue;
-      @include flexbox(flex,column, center, center);
-      gap: 10px;
+      @include flexbox(flex, column, center, center);
+      gap: 5px;
     }
-    .box-foter1{
-    //  border: 1px solid white;
+    .box-foter1 {
+      // border: 1px solid white;
       height: 5rem;
       width: 15rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      gap: 20px;
-      p{
+      gap: 10px;
+      p {
         font-family: $fuenteTexto;
       }
-      ul{
-        @include flexbox(flex,row,center,center);
+      ul {
+        @include flexbox(flex, row, center, center);
         gap: 20px;
       }
-
     }
-    .box-foter2{
-      h3{
+    .box-foter2 {
+      h3 {
         font-size: 15px;
-        font-family: 'Courier New', Courier, monospace;
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
       }
-    }
-  }
-}
-
-/*------------------- VISTA DESKTOP ---------------------*/
-@media screen and(min-width:768px) {
-  body {
-    display: grid;
-    grid-template-areas:
-      "cabecera cabecera cabecera "
-      "navBar navBar navBar "
-      "main main main"
-      "footer footer footer";
-
-    .main {
-      grid-area: main;
-    }
-    .navBar {
-      grid-area: navBar;
-    }
-    .main {
-      grid-area: main;
-    }
-    .footer {
-      grid-area: footer;
     }
   }
 }
