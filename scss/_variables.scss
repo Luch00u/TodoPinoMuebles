@@ -1,62 +1,86 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap");
 //variables
-$fondoHeader: linear-gradient(40deg,#040303,#461111,#A13333,#B3541E);
-$fondoPagina:rgb(173, 173, 173) ;
+$fondoHeader: linear-gradient(40deg, #040303, #461111, #a13333, #b3541e);
+$fondoPagina: rgb(173, 173, 173);
 $fondoNav: linear-gradient(to top, #2b2b2b, rgb(70, 68, 68));
-$fondoSeccionNosotros: #73777B;
-$gradienteSeccionNosotros:linear-gradient(to top, #73777B,#bbbdc1,#73777B);
-$fuenteTexto: 'Koulen', cursive;
-$sombraTitulo:1px 1px 20px black;
-$fuenteH1: 'Black Ops One',cursive;
-$fuenteNavBar:'Alumni Sans Inline One';
-$fuenteH2:'Koulen', cursive;
+$fondoSeccionNosotros: #73777b;
+$gradienteSeccionNosotros: linear-gradient(
+  85deg,
+  rgb(197, 197, 197),
+  rgb(241, 240, 240),
+  rgb(184, 184, 184)
+);
+$fuenteTexto: "Koulen", cursive;
+$sombraTitulo: 1px 1px 20px black;
+$fuenteH1: "Black Ops One", cursive;
+$fuenteNavBar: "Alumni Sans Inline One";
+$fuenteH2: "Koulen", cursive;
+$fondoImagenesEnBlanco: #eeeeee;
 
 /*--------MIXIN FLEX----------*/
-@mixin flexbox($display,$direccion,$justify,$align){
-    display: $display;
-    flex-direction: $direccion;
-    justify-content: $justify;
-    align-items: $align;
-    
+@mixin flexbox($display, $direccion, $justify, $align) {
+  display: $display;
+  flex-direction: $direccion;
+  justify-content: $justify;
+  align-items: $align;
 }
 /*--------Keyframes--------*/
 @keyframes animacionRedes {
-    0%{background-position: 0% 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0% 50%;}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @keyframes animacionHeader {
-    0%{
-        background-position: 50% 100%;
-        border-bottom-left-radius: 10% ;
-    }
-   
-    50%{
-        background-position:100% 0% ;
-        border-bottom-left-radius: 10% ;
-    }
-    100%{
-       background-position:50% 100%;
-       border-bottom-left-radius: 10% ;
-    }
+  0% {
+    background-position: 50% 100%;
+  }
+
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
 }
 
 @keyframes wsp {
-    0%{
-        transform: translate(0, 5px);
-    }
-    50%{
-        transform: translate(0, 0);
-    }
-    100%{
-        transform: translate(0, 5px);
-    }
+  0% {
+    transform: translate(0, 5px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 5px);
+  }
 }
 
 @keyframes animacionFooter {
-    0%{background-position: 0% 50%;}
-    50%{background-position: 50% 100%;}
-    100%{background-position: 190% 0%;}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 190% 0%;
+  }
 }
 
+@keyframes iluminati {
+  0% {
+    opacity: 60%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 60%;
+  }
+}
