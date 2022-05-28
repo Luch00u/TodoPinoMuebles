@@ -1,0 +1,312 @@
+@import "variables";
+@media screen and(max-width:768px) {
+  .bodyContacto {
+    height: 180%;
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+      "cabeceraContacto"
+      "navBarContacto"
+      "mainContacto"
+      "footerContacto";
+    .whatsap {
+      height: 3rem;
+      width: 3rem;
+      display: flex;
+      border: 2px solid white;
+      border-radius: 50%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(1, 161, 1);
+      position: fixed;
+      bottom: 15px;
+      right: 20px;
+      box-shadow: 0 0 10px black;
+      animation: wsp 2s infinite;
+      .wsp {
+        color: white;
+        font-size: 150%;
+      }
+    }
+    .cabeceraContacto {
+      height: 100%;
+      width: 100%;
+      grid-area: cabeceraContacto;
+      border-bottom: 6px solid rgb(19, 19, 19);
+
+      @include flexbox(flex, column, center, center);
+      .info-contacto {
+        background: linear-gradient(
+          to right,
+          rgb(0, 0, 0),
+          rgb(57, 57, 57),
+          rgb(0, 0, 0)
+        );
+        width: 100%;
+        height: 3em;
+        animation: animacionRedes 5s infinite;
+        background-size: 200%;
+
+        .direccion {
+          display: none;
+        }
+        .iconos-redes {
+          height: 100%;
+          ul {
+            height: 100%;
+            @include flexbox(flex, row, space-evenly, center);
+          }
+        }
+      }
+      .nombreLogo {
+        width: 100%;
+        height: 100%;
+        background-size: 300%;
+        animation: animacionHeader 5s infinite;
+        background-image: $fondoHeader;
+        @include flexbox(flex, row, center, center);
+        gap: 10px;
+        padding: 10px;
+        img {
+          height: 8rem;
+          background-color: rgb(244, 242, 232);
+          border-radius: 50%;
+          box-shadow: 1px 2px 20px black;
+        }
+        h1 {
+          @include flexbox(flex, column, center, flex-start);
+          span {
+            color: rgb(249, 249, 231);
+            font-family: $fuenteH1;
+          }
+        }
+      }
+    }
+    .navBarContacto {
+      z-index: 1;
+      position: sticky;
+      top: 0;
+      grid-area: navBarContacto;
+      box-shadow: 0 1px 10px black;
+      height: 4rem;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      background: linear-gradient(
+        to right,
+        rgb(0, 0, 0),
+        rgb(57, 57, 57),
+        rgb(0, 0, 0)
+      );
+      background-size: 200%;
+      animation: animacionRedes 5s infinite;
+      .lista {
+        height: 100%;
+        @include flexbox(flex, row, space-evenly, center);
+        li {
+          font-family: $fuenteNavBar;
+          font-size: x-small;
+          font-size: 20px;
+          letter-spacing: 1px;
+          border-bottom: 2px dotted white;
+          a {
+            color: rgb(229, 204, 9);
+          }
+        }
+      }
+    }
+    /*MAIN*/
+    .mainContacto {
+      background-color: rgb(235, 235, 235);
+      .contacto {
+        padding: 20px;
+        @include flexbox(flex, column, center, center);
+        gap: 20px;
+        h2 {
+          font-size: 25px;
+          text-align: center;
+          font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+            sans-serif;
+          color: rgb(12, 121, 17);
+        }
+        .formulario {
+          background-image: linear-gradient(
+            45deg,
+            rgba(153, 153, 153, 0.847),
+            rgba(208, 208, 208, 0.869),
+            rgba(136, 136, 136, 0.816)
+          );
+          padding: 20px;
+          border: 1px solid black;
+          border-radius: 10px;
+          width: 90%;
+          @include flexbox(flex, column, center, center);
+          gap: 20px;
+          align-items: center;
+          div {
+            @include flexbox(flex, column, center, center);
+            input {
+              border: 2px solid black;
+            }
+            label {
+              font-family: cursive;
+              font-size: 20px;
+            }
+            textarea {
+              border: 2px solid black;
+            }
+          }
+          .botones {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            input {
+              padding: 5px;
+              font-family: cursive;
+              font-size: 17px;
+              width: 90px;
+              height: 40px;
+              text-align: center;
+              border-radius: 5px;
+              background-color: rgb(241, 180, 14);
+            }
+          }
+        }
+      }
+      .redesSociales {
+        width: 100%;
+        .baner {
+          margin-top: 20px;
+          padding: 25px;
+          width: 100%;
+          height: 100%;
+          background-image: linear-gradient(
+            to top,
+            rgb(158, 135, 6),
+            rgb(166, 136, 5),
+            rgb(163, 144, 3)
+          );
+          //   background-image: linear-gradient(
+          //     to top,
+          //     rgb(109, 109, 109),
+          //     rgb(204, 204, 204),
+          //     rgb(150, 150, 150)
+          //   );
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          box-shadow: 0px 0 10px black;
+          .aviso {
+            @include flexbox(flex, column, center, center);
+            gap: 5px;
+            p {
+              margin-bottom: 20px;
+              text-align: center;
+              font-family: cursive;
+              font-size: 25px;
+              color:black;
+            }
+            div {
+              padding: 10px;
+              text-align: center;
+              border: 2px solid black;
+              background-size: 400%;
+              border-radius: 20px;
+              width: 10rem;
+              animation: redesEfecto 5s infinite;
+              margin-bottom: 10px;
+              font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+                sans-serif;
+            }
+            .face {
+              background-image: linear-gradient(
+                to right,
+                rgba(7, 7, 190, 0.903),
+                rgba(5, 38, 253, 0.891),
+                rgba(8, 8, 225, 0.886)
+              );
+            }
+            .insta {
+              background-image: linear-gradient(
+                to right,
+                rgb(87, 0, 87),
+                rgb(85, 2, 85),
+                rgb(75, 1, 75)
+              );
+            }
+            .warap {
+              background-image: linear-gradient(
+                to right,
+                rgb(0, 98, 0),
+                rgb(0, 153, 0),
+                rgb(0, 97, 0)
+              );
+            }
+            .aqui {
+              padding: 15px;
+              background-color: rgb(68, 68, 68);
+              border: 2px solid black;
+              border-radius: 10px;
+              font-size: 25px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: 5px;
+              animation: verMas 1s infinite;
+            }
+          }
+        }
+      }
+    }
+    .footerContacto {
+      grid-area: footerContacto;
+      width: 100%;
+      height: 100%;
+      animation: animacionFooter 5s infinite;
+      background-size: 200%;
+      justify-self: flex-end;
+      align-self: flex-end;
+      background-image: linear-gradient(
+        to right,
+        rgb(9, 9, 9),
+        rgb(62, 62, 62),
+        rgb(11, 11, 11)
+      );
+      color: aliceblue;
+      @include flexbox(flex, column, center, center);
+      gap: 5px;
+
+      .box-foter1 {
+        // border: 1px solid white;
+        height: 5rem;
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        p {
+          font-family: $fuenteTexto;
+        }
+        ul {
+          @include flexbox(flex, row, center, center);
+          gap: 20px;
+        }
+      }
+      .box-foter2 {
+        h3 {
+          font-size: 15px;
+          font-family: "Courier New", Courier, monospace;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

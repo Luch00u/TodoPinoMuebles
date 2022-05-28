@@ -5,7 +5,7 @@
 @media screen and(max-width:768px) {
   body {
     position: relative;
-    .whatsap{
+    .whatsap {
       height: 3rem;
       width: 3rem;
       display: flex;
@@ -20,7 +20,7 @@
       right: 20px;
       box-shadow: 0 0 10px black;
       animation: wsp 2s infinite;
-      .wsp{
+      .wsp {
         color: white;
         font-size: 150%;
       }
@@ -44,7 +44,7 @@
         background: linear-gradient(
           to right,
           rgb(0, 0, 0),
-          rgb(81, 81, 81),
+          rgb(57, 57, 57),
           rgb(0, 0, 0)
         );
         width: 100%;
@@ -98,7 +98,7 @@
       background: linear-gradient(
         to right,
         rgb(0, 0, 0),
-        rgb(93, 93, 93),
+        rgb(57, 57, 57),
         rgb(0, 0, 0)
       );
       background-size: 200%;
@@ -143,23 +143,21 @@
             color: rgb(255, 255, 255);
             text-align: center;
             width: 80%;
-            // border: 5px dotted rgb(15, 172, 39);
 
-           
             padding: 10px;
             border-radius: 20px;
           }
           a {
             border: 2px solid black;
-            border-bottom-right-radius: 15px;
-            border-top-right-radius: 15px;
+            // border-bottom-right-radius: 15px;
+            // border-top-right-radius: 15px;
             font-size: 18px;
             background-color: rgb(61, 61, 61);
             color: yellow;
             padding: 10px;
             width: 6rem;
             text-align: center;
-            box-shadow: 2px 5px 20px rgb(0, 0, 0);
+            box-shadow: 2px 5px 10px rgb(0, 0, 0);
           }
         }
       }
@@ -232,29 +230,30 @@
       color: aliceblue;
       @include flexbox(flex, column, center, center);
       gap: 5px;
-    }
-    .box-foter1 {
-      // border: 1px solid white;
-      height: 5rem;
-      width: 15rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 10px;
-      p {
-        font-family: $fuenteTexto;
+
+      .box-foter1 {
+        // border: 1px solid white;
+        height: 5rem;
+        width: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        p {
+          font-family: $fuenteTexto;
+        }
+        ul {
+          @include flexbox(flex, row, center, center);
+          gap: 20px;
+        }
       }
-      ul {
-        @include flexbox(flex, row, center, center);
-        gap: 20px;
-      }
-    }
-    .box-foter2 {
-      h3 {
-        font-size: 15px;
-        font-family: "Courier New", Courier, monospace;
-        text-align: center;
+      .box-foter2 {
+        h3 {
+          font-size: 15px;
+          font-family: "Courier New", Courier, monospace;
+          text-align: center;
+        }
       }
     }
   }

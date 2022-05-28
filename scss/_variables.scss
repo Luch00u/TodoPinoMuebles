@@ -84,3 +84,27 @@ $fondoImagenesEnBlanco: #eeeeee;
     opacity: 60%;
   }
 }
+
+@keyframes redesEfecto {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 150% 200%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+@keyframes verMas {
+  0% {
+    transform: translate(0, 10px);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 10px);
+  }
+}
