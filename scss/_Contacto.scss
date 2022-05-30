@@ -413,6 +413,7 @@
       }
     }
     .navBarContacto {
+      z-index: 1;
       grid-area: navBarContacto;
       position: sticky;
       top: 0;
@@ -608,6 +609,7 @@
               align-items: center;
               gap: 5px;
               animation: verMas 1s infinite;
+              
             }
           }
         }
