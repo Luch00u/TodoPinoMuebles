@@ -474,14 +474,17 @@ a {
           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
           font-size: x-small;
           font-size: 20px;
-          border: 1px solid white;
           padding: 8px;
           width: 125px;
-          border-radius: 20px;
           text-align: center; }
           body .navBar .lista li:hover {
             opacity: 80%; }
           body .navBar .lista li a {
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 20px;
+            width: 100%;
+            height: 100%;
             color: #f1f1ed; }
             body .navBar .lista li a:hover {
               color: #fbfb0d; }
@@ -516,7 +519,8 @@ a {
             width: 80%;
             padding: 10px;
             border-radius: 20px;
-            transition-duration: 2s; }
+            transition-duration: 2s;
+            cursor: grab; }
             body .main .principal .inicio p:hover {
               transform: scale(1.3);
               transition: 8s; }
@@ -964,14 +968,15 @@ a {
           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
           font-size: x-small;
           font-size: 20px;
-          border: 1px solid white;
           padding: 8px;
           width: 125px;
-          border-radius: 20px;
           text-align: center; }
           .bodyCatalogo .navBarCatalogo .lista li:hover {
             opacity: 80%; }
           .bodyCatalogo .navBarCatalogo .lista li a {
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 20px;
             color: #f1f1ed; }
             .bodyCatalogo .navBarCatalogo .lista li a:hover {
               color: #fbfb0d; }
@@ -1268,7 +1273,7 @@ a {
             .bodyContacto .mainContacto .contacto .formulario div input {
               border: 2px solid black; }
             .bodyContacto .mainContacto .contacto .formulario div label {
-              font-family: cursive;
+              font-family: "Courier New", Courier, monospace;
               font-size: 20px; }
             .bodyContacto .mainContacto .contacto .formulario div textarea {
               border: 2px solid black; }
@@ -1351,7 +1356,7 @@ a {
         width: 100%; }
         .bodyContacto .mainContacto .ubicacion h3 {
           font-size: 30px;
-          font-family: 'Courier New', Courier, monospace; }
+          font-family: "Courier New", Courier, monospace; }
         .bodyContacto .mainContacto .ubicacion iframe {
           width: 100%; }
     .bodyContacto .footerContacto {
@@ -1497,14 +1502,15 @@ a {
           font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
           font-size: x-small;
           font-size: 20px;
-          border: 1px solid white;
           padding: 8px;
           width: 125px;
-          border-radius: 20px;
           text-align: center; }
           .bodyContacto .navBarContacto .lista li:hover {
             opacity: 80%; }
           .bodyContacto .navBarContacto .lista li a {
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 20px;
             color: #f1f1ed; }
             .bodyContacto .navBarContacto .lista li a:hover {
               color: #fbfb0d; }
@@ -1546,7 +1552,7 @@ a {
               width: 30%;
               height: 1.5rem; }
             .bodyContacto .mainContacto .contacto .formulario div label {
-              font-family: 'Courier New', Courier, monospace;
+              font-family: "Courier New", Courier, monospace;
               font-size: 25px; }
             .bodyContacto .mainContacto .contacto .formulario div textarea {
               border: 2px solid black; }
@@ -1556,7 +1562,7 @@ a {
             gap: 20px; }
             .bodyContacto .mainContacto .contacto .formulario .botones input {
               padding: 5px;
-              font-family: 'Times New Roman', Times, serif;
+              font-family: "Times New Roman", Times, serif;
               font-size: 17px;
               width: 90px;
               height: 40px;
@@ -1635,7 +1641,7 @@ a {
         width: 100%; }
         .bodyContacto .mainContacto .ubicacion h3 {
           font-size: 30px;
-          font-family: 'Courier New', Courier, monospace; }
+          font-family: "Courier New", Courier, monospace; }
         .bodyContacto .mainContacto .ubicacion iframe {
           width: 100%; }
     .bodyContacto .footerContacto {

@@ -149,7 +149,7 @@
               border: 2px solid black;
             }
             label {
-              font-family: cursive;
+              font-family: "Courier New", Courier, monospace;
               font-size: 20px;
             }
             textarea {
@@ -264,14 +264,14 @@
           }
         }
       }
-      .ubicacion{
-        @include flexbox(flex,column,center,center);
+      .ubicacion {
+        @include flexbox(flex, column, center, center);
         width: 100%;
-        h3{
+        h3 {
           font-size: 30px;
-          font-family: 'Courier New', Courier, monospace;
+          font-family: "Courier New", Courier, monospace;
         }
-        iframe{
+        iframe {
           width: 100%;
         }
       }
@@ -439,15 +439,17 @@
             sans-serif;
           font-size: x-small;
           font-size: 20px;
-          border: 1px solid white;
           padding: 8px;
           width: 125px;
-          border-radius: 20px;
+
           text-align: center;
           &:hover {
             opacity: 80%;
           }
           a {
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 20px;
             color: rgb(241, 241, 237);
             &:hover {
               color: rgb(251, 251, 13);
@@ -486,16 +488,15 @@
           gap: 20px;
           align-items: center;
           div {
-           
             @include flexbox(flex, column, center, center);
             width: 70%;
             input {
               border: 2px solid black;
               width: 30%;
-              height:1.5rem;
+              height: 1.5rem;
             }
             label {
-              font-family: 'Courier New', Courier, monospace;
+              font-family: "Courier New", Courier, monospace;
               font-size: 25px;
             }
             textarea {
@@ -508,14 +509,14 @@
             gap: 20px;
             input {
               padding: 5px;
-              font-family: 'Times New Roman', Times, serif;
+              font-family: "Times New Roman", Times, serif;
               font-size: 17px;
               width: 90px;
               height: 40px;
               text-align: center;
               border-radius: 5px;
               background-color: rgb(241, 180, 14);
-              &:hover{
+              &:hover {
                 opacity: 60%;
                 cursor: pointer;
               }
@@ -609,19 +610,18 @@
               align-items: center;
               gap: 5px;
               animation: verMas 1s infinite;
-              
             }
           }
         }
       }
-      .ubicacion{
-        @include flexbox(flex,column,center,center);
+      .ubicacion {
+        @include flexbox(flex, column, center, center);
         width: 100%;
-        h3{
+        h3 {
           font-size: 30px;
-          font-family: 'Courier New', Courier, monospace;
+          font-family: "Courier New", Courier, monospace;
         }
-        iframe{
+        iframe {
           width: 100%;
         }
       }

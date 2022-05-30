@@ -104,7 +104,6 @@
       background-size: 200%;
       animation: animacionRedes 5s infinite;
       .lista {
-        
         height: 100%;
         @include flexbox(flex, row, space-evenly, center);
         li {
@@ -282,65 +281,65 @@
       "mainCatalogo mainCatalogo"
       "footerCatalogo footerCatalogo";
 
-      .cabeceraCatalogo {
-        grid-area: cabeceraCatalogo;
-        display: flex;
-        flex-direction: column;
-        .info-contacto {
-          height: 3rem;
-          @include flexbox(flex, row, center, center);
-          background-image: linear-gradient(
-            to right,
-            rgb(0, 0, 0),
-            rgb(57, 57, 57),
-            rgb(0, 0, 0)
-          );
-          animation: animacionRedes 5s infinite;
-          background-size: 200%;
-          .direccion {
-            @include flexbox(flex, row, space-evenly, center);
-            width: 50%;
-            color: white;
-          }
-          .iconos-redes {
-            width: 50%;
-            ul {
-              @include flexbox(flex, row, space-evenly, center);
-            }
-          }
+    .cabeceraCatalogo {
+      grid-area: cabeceraCatalogo;
+      display: flex;
+      flex-direction: column;
+      .info-contacto {
+        height: 3rem;
+        @include flexbox(flex, row, center, center);
+        background-image: linear-gradient(
+          to right,
+          rgb(0, 0, 0),
+          rgb(57, 57, 57),
+          rgb(0, 0, 0)
+        );
+        animation: animacionRedes 5s infinite;
+        background-size: 200%;
+        .direccion {
+          @include flexbox(flex, row, space-evenly, center);
+          width: 50%;
+          color: white;
         }
-        .nombreLogo {
-          @include flexbox(flex, row, center, center);
-          gap: 20px;
-          background-size: 300%;
-          animation: animacionHeader 5s infinite;
-          background-image: $fondoHeader;
-          padding: 30px;
-          img {
-            height: 12rem;
-            background-color: rgb(244, 242, 232);
-            border-radius: 50%;
-            box-shadow: 1px 2px 20px black;
-            transition: 2s;
-            &:hover {
-              transform: scale(1.2);
-              transition: 5s;
-            }
-          }
-          h1 {
-            @include flexbox(flex, column, center, flex-start);
-            font-size: 45px;
-            &:hover {
-              transform: translate(30px, 0);
-              transition: 5s;
-            }
-            span {
-              color: rgb(249, 249, 231);
-              font-family: $fuenteH1;
-            }
+        .iconos-redes {
+          width: 50%;
+          ul {
+            @include flexbox(flex, row, space-evenly, center);
           }
         }
       }
+      .nombreLogo {
+        @include flexbox(flex, row, center, center);
+        gap: 20px;
+        background-size: 300%;
+        animation: animacionHeader 5s infinite;
+        background-image: $fondoHeader;
+        padding: 30px;
+        img {
+          height: 12rem;
+          background-color: rgb(244, 242, 232);
+          border-radius: 50%;
+          box-shadow: 1px 2px 20px black;
+          transition: 2s;
+          &:hover {
+            transform: scale(1.2);
+            transition: 5s;
+          }
+        }
+        h1 {
+          @include flexbox(flex, column, center, flex-start);
+          font-size: 45px;
+          &:hover {
+            transform: translate(30px, 0);
+            transition: 5s;
+          }
+          span {
+            color: rgb(249, 249, 231);
+            font-family: $fuenteH1;
+          }
+        }
+      }
+    }
     .navBarCatalogo {
       z-index: 1;
       grid-area: navBarCatalogo;
@@ -368,15 +367,17 @@
             sans-serif;
           font-size: x-small;
           font-size: 20px;
-          border: 1px solid white;
           padding: 8px;
           width: 125px;
-          border-radius: 20px;
+          
           text-align: center;
           &:hover {
             opacity: 80%;
           }
           a {
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 20px;
             color: rgb(241, 241, 237);
             &:hover {
               color: rgb(251, 251, 13);
@@ -406,7 +407,6 @@
             "box-categoria box-categoria1"
             "box-categoria2 box-categoria3"
             "box-categoria4 box-categoria4";
-          // justify-items: center;
           justify-content: center;
           gap: 100px;
 
@@ -453,7 +453,7 @@
               h3 {
                 font-family: Cambria, Cochin, Georgia, Times, "Times New Roman",
                   serif;
-                  font-size:17px;
+                font-size: 17px;
               }
             }
           }
@@ -466,9 +466,8 @@
           // .box-categoria3 {
           //   @extend .box-categoria;
           // }
-          // .box-categoria4 {
-          //   justify-items: center;
-          // }
+          
+          
         }
       }
     }
@@ -517,6 +516,3 @@
     }
   }
 }
-
-
-
