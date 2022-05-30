@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&display=swap");
+html {
+  scroll-behavior: smooth; }
+
 * {
   padding: 0;
   margin: 0;
@@ -487,7 +490,7 @@ a {
       height: 150vh;
       /*40%*/ }
       body .main .principal {
-        height: 50%;
+        height: 60%;
         /*!!!!!!!!!!*/
         background-image: url(../images/seccionInicio.jpg);
         background-size: cover;
@@ -530,7 +533,7 @@ a {
               color: white;
               opacity: 80%; }
       body .main .nosotros {
-        height: 50%;
+        height: 40%;
         /*!!!*/
         width: 100%;
         background: linear-gradient(65deg, #c5c5c5, #f1f0f0, #b8b8b8); }
@@ -541,7 +544,6 @@ a {
           align-items: center;
           height: 100%;
           width: 100%;
-          border: 1px solid black;
           /*------CAJAS CONTENEDORAS DE ICONO Y TEXTO---------*/ }
           body .main .nosotros .informacion .box-info1, body .main .nosotros .informacion .box-info2, body .main .nosotros .informacion .box-info3 {
             width: 30%;
@@ -940,6 +942,7 @@ a {
             color: #f9f9e7;
             font-family: "Black Ops One", cursive; }
     .bodyCatalogo .navBarCatalogo {
+      z-index: 1;
       grid-area: navBarCatalogo;
       position: sticky;
       top: 0;

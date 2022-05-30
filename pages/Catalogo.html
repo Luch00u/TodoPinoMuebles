@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a8038b6ece.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/estilos.css" />
     <title>Todo Pino Muebles | Catálogo general</title>
 </head>
@@ -74,14 +75,14 @@
             <h2>CATÁLOGO</h2>
             <div class="catalogo">
                 
-                <div class="box-categoria tablet">
+                <div class="box-categoria wow animate__animated animate__lightSpeedInLeft ">
                     <img src="../images/Categorias/despensero.png" alt="despensero">
                     <a href="#">
                         <h3>DESPENSEROS</h3>
                         <i class="fa-solid fa-angles-right"></i>
                     </a>
                 </div>
-                <div class="box-categoria1">
+                <div class="box-categoria1 wow animate__animated animate__lightSpeedInRigh">
                     <img src="../images/Categorias/organizador-doble-6canastos-reducido-400px-removebg-preview.png"
                         alt="organizador">
                     <a href="#">
@@ -89,21 +90,21 @@
                         <i class="fa-solid fa-angles-right"></i>
                     </a>
                 </div>
-                <div class="box-categoria2">
+                <div class="box-categoria2 wow animate__animated animate__lightSpeedInLeft">
                     <img src="../images/Categorias/ropero-reduccion-removebg-preview.png" alt="roperos">
                     <a href="#">
                         <h3>ROPEROS</h3>
                         <i class="fa-solid fa-angles-right"></i>
                     </a>
                 </div>
-                <div class="box-categoria3">
+                <div class="box-categoria3 wow animate__animated animate__lightSpeedInRight">
                     <img src="../images/Categorias/comboMesaYSilla-categ.png" alt="mesa y sillas">
                     <a href="#">
                         <h3>COMBO:MESA+SILLA</h3>
                         <i class="fa-solid fa-angles-right"></i>
                     </a>
                 </div>
-                <div class="box-categoria4">
+                <div class="box-categoria4 wow animate__animated animate__lightSpeedInLeft">
                     <img src="../images/Categorias/silla1-400px-removebg-preview.png" alt="">
                     <a href="#">
                         <h3>SILLAS</h3>
@@ -142,6 +143,10 @@
             <h3>Copyright Todos los derechos reservados 2022</h3>
         </div>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

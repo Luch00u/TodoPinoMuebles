@@ -104,6 +104,7 @@
       background-size: 200%;
       animation: animacionRedes 5s infinite;
       .lista {
+        
         height: 100%;
         @include flexbox(flex, row, space-evenly, center);
         li {
@@ -341,6 +342,7 @@
         }
       }
     .navBarCatalogo {
+      z-index: 1;
       grid-area: navBarCatalogo;
       position: sticky;
       top: 0;

@@ -395,7 +395,7 @@
       grid-area: main;
       height: 150vh;
       .principal {
-        height: 50%; /*!!!!!!!!!!*/
+        height: 60%; /*!!!!!!!!!!*/
         background-image: url(../images/seccionInicio.jpg);
         background-size: cover;
         background-position: center;
@@ -403,7 +403,6 @@
         .inicio {
           height: 100%;
           width: 100%;
-          // border-radius: 15%;
           @include flexbox(flex, column, center, center);
           gap: 155px;
           background-color: rgba(65, 65, 65, 0.702);
@@ -442,7 +441,7 @@
         }
       } /*40%*/
       .nosotros {
-        height: 50%; /*!!!*/
+        height: 40%; /*!!!*/
         width: 100%;
         background: linear-gradient(
           65deg,
@@ -454,10 +453,9 @@
           @include flexbox(flex, row, space-evenly, center);
           height: 100%;
           width: 100%;
-          border: 1px solid black;
+
           /*------CAJAS CONTENEDORAS DE ICONO Y TEXTO---------*/
           .box-info1 {
-            // border: 1px solid black;
             width: 30%;
             height: 80%;
             @include flexbox(flex, column, center, center);
@@ -533,6 +531,5 @@
         }
       }
     }
-    }
   }
-
+}

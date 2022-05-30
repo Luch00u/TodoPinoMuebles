@@ -17,15 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a8038b6ece.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/estilos.css" />
     <title>Todo Pino Muebles | Muebles para tu hogar</title>
 </head>
 
 <body>
     <!-- Positions absloute y fixed -->
-    <div class="whatsap">
+    <div class="whatsap ">
         <a target="_blank" href="https://wa.me/+5491167396292?text=Hola me gustaria comprar tu producto"><i
-                class=" wsp fa-brands fa-whatsapp"></i></a>
+                class=" wsp fa-brands fa-whatsapp wow animate__animated animate__fadeInDownBig "></i></a>
     </div>
     <!-- ----------       ----------------------- -->
     <header class="cabecera">
@@ -56,17 +57,20 @@
                 </ul>
             </div>
         </div>
-        <div class="nombreLogo">
-            <img src="images/logoSinTitulo.PNG" alt="logoTodoPino" />
-            <h1><span>TODO</span> <span>PINO</span><span>HOGAR</span></h1>
+        <div class="nombreLogo ">
+            <img class="wow animate__animated animate__fadeInLeftBig" src="images/logoSinTitulo.PNG"
+                alt="logoTodoPino" />
+            <h1 class="wow animate__animated animate__fadeInRightBig"><span>TODO</span>
+                <span>PINO</span><span>HOGAR</span>
+            </h1>
         </div>
     </header>
-    <nav class="navBar">
+    <nav class="navBar ">
         <ul class="lista">
-            <li><a href="">INICIO</a></li>
-            <li><a href="#nosotros">NOSOTROS</a></li>
-            <li><a href="pages/Catalogo.html">CATÁLOGO</a></li>
-            <li>
+            <li class="wow animate__animated animate__zoomIn" ><a href="#inicio">INICIO</a></li>
+            <li class="wow animate__animated animate__zoomIn"><a href="#nosotros">NOSOTROS</a></li>
+            <li class="wow animate__animated animate__zoomIn"><a href="pages/Catalogo.html">CATÁLOGO</a></li>
+            <li class="wow animate__animated animate__zoomIn">
                 <span class="barrita"><a href="pages/Contacto.html">CONTÁCTO</a></span>
             </li>
         </ul>
@@ -75,25 +79,25 @@
     <main class="main">
         <!--Seccion bienvenida/principal-->
         <section class="principal">
-            <div class="inicio">
+            <div class="inicio" id="inicio">
                 <p>LOS MEJORES MUEBLES PARA TU HOGAR</p>
                 <a href="#nosotros">Ver más</a>
             </div>
         </section>
         <!-- Seccion informacion -->
         <section class="nosotros" id="nosotros">
-            <div class="informacion">
-                <div class="box-info1">
+            <div class="informacion ">
+                <div class="box-info1 wow animate__animated animate__rotateInDownLeft ">
                     <img src="images/iconos/martillo.png" alt="pintura" />
                     <h3>SOMOS FABRICANTES</h3>
                     <p>Fabricamos tus muebles a medida</p>
                 </div>
-                <div class="box-info2">
+                <div class="box-info2 wow animate__animated animate__rotateIn">
                     <img src="images/iconos/barniz.png" alt="pintura" />
                     <h3>TRABAJOS DE PINTURA A ELECCIÓN</h3>
                     <p>Acabado del producto con el color que vos elegís</p>
                 </div>
-                <div class="box-info3">
+                <div class="box-info3 wow animate__animated animate__rotateInDownRight ">
                     <img src="images/iconos/envios.png" alt="envios" />
                     <h3>HACEMOS ENVÍOS</h3>
                     <p>Realizamos los envíos por zona sur y zona oeste</p>
@@ -128,6 +132,11 @@
         </div>
 
     </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
